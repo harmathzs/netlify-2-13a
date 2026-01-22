@@ -10,6 +10,7 @@ function App() {
   const handlePostClick = () => {
     fetch('/.netlify/functions/fruits', {
       method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({id: 4, name: "grape", healthy: true})
     })
   }
