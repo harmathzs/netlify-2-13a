@@ -3,14 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-// TODO
-interface Fruit {
 
+interface Fruit {
+  id?: number,
+  name: string,
+  healthy?: boolean
 }
 
 function App() {
   //const [count, setCount] = useState(0)
-  const [fruits, setFruits] = useState([])
+  const [fruits, setFruits]: [Fruit[], Function] = useState([])
 
   const handlePostClick = () => {
     fetch('/.netlify/functions/fruits', {
