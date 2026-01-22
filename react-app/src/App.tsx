@@ -43,9 +43,12 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="card">
+      <div className="card">
         {JSON.stringify(fruits)}
-      </p>
+      </div>
+      <div className="card">
+        I love gypsies!
+      </div>
     </>
   )
 }
