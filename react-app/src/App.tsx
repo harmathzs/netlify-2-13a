@@ -3,6 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+// TODO
+interface Fruit {
+
+}
+
 function App() {
   //const [count, setCount] = useState(0)
   const [fruits, setFruits] = useState([])
