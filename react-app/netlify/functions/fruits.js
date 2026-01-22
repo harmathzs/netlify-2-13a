@@ -18,7 +18,7 @@ export const handler = async (event, context) => {
         const newFruit = JSON.parse(event.body)
         console.log('newFruit', newFruit) // Object{}
 
-        const result = await sql(`INSERT INTO fruits (name, healthy) VALUES (${newFruit.name}, ${newFruit.healthy}) RETURNING *`)
+        const result = await sql`INSERT INTO fruits (name, healthy) VALUES (${newFruit.name}, ${newFruit.healthy}) RETURNING *`
 
         return {
             statusCode: 201,
