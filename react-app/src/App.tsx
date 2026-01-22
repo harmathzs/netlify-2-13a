@@ -17,7 +17,10 @@ function App() {
         healthy: true}
       )
     })
-    .then(console.log)
+    .then(res => res.json())
+    .then(result => {
+      console.log('POST result', result)
+    })
   }
 
   useEffect(()=>{
