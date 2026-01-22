@@ -20,6 +20,7 @@ function App() {
     .then(res => res.json())
     .then(result => {
       console.log('POST result', result)
+      setFruits([...fruits, result[0] ])
     })
   }
 
